@@ -1,0 +1,296 @@
+.container {
+  max-width: 1080px;
+  margin: 32px auto;
+  padding: 16px;
+  color: #111;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  opacity: 0.7;
+}
+
+.headerActions {
+  display: flex;
+  gap: 8px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.cardTitleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f3f3f3;
+  border: 1px solid #e6e6e6;
+  opacity: 0.9;
+}
+
+.kv {
+  display: grid;
+  gap: 10px;
+}
+
+.kvRow {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fafafa;
+  border: 1px solid #eee;
+}
+
+.k {
+  font-weight: 800;
+  opacity: 0.7;
+}
+.v {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+.textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background: #fcfcfc;
+  outline: none;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.textarea:focus {
+  border-color: #111;
+}
+
+.rowBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.miniHelp {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.toolbarLeft {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toolbarRight {
+  display: flex;
+  gap: 8px;
+}
+
+.labelInline {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.input {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  background: #fff;
+}
+
+.input:focus {
+  border-color: #111;
+}
+
+.btnPrimary,
+.btnGhost,
+.btnDanger,
+.btnTiny,
+.btnTinyDanger {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 800;
+  background: #111;
+  color: #fff;
+}
+
+.btnPrimary:disabled,
+.btnGhost:disabled,
+.btnDanger:disabled,
+.btnTiny:disabled,
+.btnTinyDanger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnGhost {
+  background: #fff;
+  color: #111;
+  border-color: #e0e0e0;
+}
+
+.btnDanger {
+  background: #fff;
+  color: #d11;
+  border-color: #f2bcbc;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.empty {
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px dashed #ddd;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.itemCard {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 12px;
+  background: #fff;
+}
+
+.itemTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.itemId {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.idBadge {
+  font-size: 12px;
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f6f6f6;
+  border: 1px solid #e8e8e8;
+}
+
+.itemActions {
+  display: flex;
+  gap: 8px;
+}
+
+.btnTiny {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  border: 1px solid #e0e0e0;
+  font-weight: 800;
+}
+
+.btnTinyDanger {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #fff;
+  color: #d11;
+  border: 1px solid #f2bcbc;
+  font-weight: 900;
+}
+
+.itemText {
+  white-space: pre-wrap;
+  line-height: 1.55;
+}
+
+.toast {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  font-weight: 800;
+  max-width: 520px;
+}
+
+.toastOk {
+  background: #111;
+  color: #fff;
+}
+
+.toastErr {
+  background: #fff;
+  color: #d11;
+  border: 1px solid #f2bcbc;
+}
